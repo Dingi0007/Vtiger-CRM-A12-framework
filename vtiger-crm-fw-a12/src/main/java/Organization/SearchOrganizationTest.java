@@ -1,0 +1,10 @@
+package Organization;
+
+public class SearchOrganizationTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
