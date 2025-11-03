@@ -457,4 +457,14 @@ public class WebDriverUtility {
 		}
 		driver.switchTo().window(parentWindowHandle);
 	}
+
+
+	public void openUrl() {
+		// TODO Auto-generated method stub
+		
+	}
+    public void winMax() {
+		// TODO Auto-generated method stub
+		
+	}
 }

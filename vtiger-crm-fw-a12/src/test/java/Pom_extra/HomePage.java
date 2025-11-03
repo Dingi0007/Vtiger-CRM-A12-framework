@@ -16,4 +16,9 @@ public class HomePage {
 	public WebElement getLogo() {
 		return logo;
 	}
+
+	public WebElement getOrgLink() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

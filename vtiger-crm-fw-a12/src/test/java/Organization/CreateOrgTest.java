@@ -9,17 +9,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
-import generic_utility.FileUtility;
-import generic_utility.WebDriverUtility;
-import object_repository.HomePage;
-import object_repository.LoginPage;
-import object_repository.OrgPage;
-import object_repository.VerifyOrgPage;
+import generic_Utility.FileUtility;
+import generic_Utility.WebDriverUtility;
+import Object_repository.HomePage;
+import Object_repository.LoginPage;
+import Object_repository.OrgPage;
+import Object_repository.VerifyOrgPage;
 
 public class CreateOrgTest {
-
-	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException {
+@Test
+public void createorgTest() throws IOException, InterruptedException {
 		FileUtility fUtil = new FileUtility();
 
 //		Get the data from properties file
@@ -27,7 +28,7 @@ public class CreateOrgTest {
 		String URL = fUtil.getDataFromPropertiesFile("url");
 
 //		Get the data from excel file
-		String orgName = fUtil.getStringDataFromExcelFile("org", 3, 0);
+		String orgName = fUtil.getStringDataFromExcelFile1("org", 3, 0);
 
 //		Open Browser 
 		WebDriver driver = new ChromeDriver();
